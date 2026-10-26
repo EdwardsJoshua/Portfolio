@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joshua Edwards | Gameplay Programmer</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <nav>
+            <a href="../index.html">Home</a>
+            <a href="../projects.html">All Projects</a>
+            <a href="JoshuaEdwards_CV.pdf">CV</a>
+            <a href="../#aboutmeSection">About</a>
+            </nav>
+        </div>
+        <div class="header-text-box">
+            <div>
+            <h1> Joshua Edwards </h1>
+            <p> A Gameplay Programmer</p>
+            <a href="mailto:josh4edwards@outlook.com" class="btn">Get In Touch </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="projectSection">
+        <h2>Star Map Navigation</h2>
+            <div class="project-detail-box">
+                <div class="project-box-text">
+                    <div class="project-box-image">
+                    <img src="Images/StarNavThumbnail.png" alt="Star Nav Thumbnail" style="width: 100%; height: 100%;"/>
+                    </div>
+                    <div class="about-project-heading"> About Project </div>
+                    <div class="about-project">
+                          This project was created as a display of different methods of pathfinding algorithms. Connecting different nodes or "stars" 
+                          with routes and calucating efficient paths to a target location.
+                    </div>
+                    <div class="about-project-heading"> Project Details </div>
+                    <ul>
+                        <li>Unity Engine</li>
+                        <li>Pathfinding </li>
+                        <li>C#</li>
+                        <li>Djkstra</li>
+
+                    </ul>
+                    <div class="about-project-subheading"> Pathfinding </div>
+                    <div class="project-box-image"> <img src="" alt="Pathfinding Example" style="width: 100%; height: 100%;"></div>
+                    <div class="about-project">
+                        This project has the option of finding a path using Djkstra, Greedy or A* algorithms. Before the user selects the target
+                        start and end points, the manager calculates the distance between each node with a valid route and adds the node class and 
+                        float to a dictionary on each node storing the data for connecting nodes.
+                        The Djkstra algorithm will cycle through the dictionary of the target starting node and saves the current path into a 
+                        new dictionary. The algorithm moves onto the shortest path node and repeats the process until it finds the target end point.
+                        The Greedy algorithm instead calculates the distances between the next node in the current nodes dictionary and target end
+                        point, favouring the node with the shortest distance.
+                    </div>
+                    <div class="about-project-subheading"> Constraints </div>
+                    <div class="project-box-image"> <img src="" alt="Contraint Menu or Example" style="width: 100%; height: 100%;"></div>
+                    <div class="about-project"> 
+                        To add some complexity to the pathfinding, I added some contraints to the nodes, forcing the pathfinding algorithms to
+                        seach for alternative routes. The contraint options avalible are blackholes, wormholes and fuel.
+                        The fuel contraint limits the number of jumps or distance the user's "ship" can travel and must reroute to a refuel
+                        node or "star" to be able to reach further distances.
+                        The blackhole contraint can block and destroy nearby routes to the blackhole randomly generated having the path avoiding 
+                        those areas.
+                        The wormholes contraint teleports the user to another random wormhole point which will cause randomness to the path and 
+                        unpridictibility.
+                    </div> 
+                    <div class="project-box-image"> <img src="Images/ElaStickPlatform2.png" alt="Platform Picture" style="width: 100%; height: 100%;"></div>
+                    <div class="project-box-image"> <img src="Images/ElaStickPlatform.png" alt="Platform Picture" style="width: 100%; height: 100%;"></div>
+                    
+                </div>
+                    <div class="project-box-text-links">
+                        <a href="https://github.com/uniglos/RT-EliStick" class="githubIcon">
+                            <img src="Images/GithubIcon.png" alt="GitHub Page"/>
+                        </a>
+                    </div>
+                </div>
+        </div>
+        </div>
+    </section>
+
+</body>
+</html>
